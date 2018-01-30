@@ -1,1 +1,1 @@
-console.log(require('mod1'))
+console.log('app1 depends on: ' + require('mod1'))

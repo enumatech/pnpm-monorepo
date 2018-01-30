@@ -3,8 +3,40 @@
 Demonstrate the structure and management of a monorepo which contains
 library and application node packages which depend on each other.
 
+```
+$ tree .
+.
+├── README.md
+├── app1
+│   ├── index.js
+│   ├── node_modules
+│   │   └── mod1 -> ../../mod1
+│   ├── package.json
+│   └── shrinkwrap.yaml
+├── app2
+│   ├── index.js
+│   ├── node_modules
+│   │   └── mod1 -> ../../mod1
+│   ├── package.json
+│   └── shrinkwrap.yaml
+├── mod1
+│   ├── index.js
+│   ├── node_modules
+│   │   └── mod2 -> ../../mod2
+│   ├── package.json
+│   └── shrinkwrap.yaml
+├── mod2
+│   ├── index.js
+│   └── package.json
+├── node_modules
+│   └── pnpmr -> .registry.npmjs.org/pnpmr/0.3.0/node_modules/pnpmr
+├── package.json
+└── shrinkwrap.yaml
 
-## Constructing a scenario
+12 directories, 14 files
+```
+
+## Constructing the scenario
 
 The steps were roughly these:
 
