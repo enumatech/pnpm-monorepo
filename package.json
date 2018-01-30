@@ -1,0 +1,15 @@
+{
+  "name": "pnpm-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd app1; node index.js; cd ..; cd app2; node index.js; cd .."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "pnpmr": "^0.3.0"
+  }
+}

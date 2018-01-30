@@ -1,0 +1,7 @@
+dependencies:
+  mod1: 'file:../mod1'
+registry: 'https://registry.npmjs.org/'
+shrinkwrapMinorVersion: 4
+shrinkwrapVersion: 3
+specifiers:
+  mod1: 'file:../mod1'
